@@ -2,6 +2,6 @@
 "master" is the main branch
 
 Member1: 
-Member2: 
+Member2: Yonas Bahre 
 Member3: 
 Member4: Hunter Rafferty
