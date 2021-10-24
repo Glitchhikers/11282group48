@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:isScrollContainer="false"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="240dp"
+        android:layout_height="266dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/drive"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="89dp"
+        android:text="DRIVE"
+        android:textSize="20dp"
+        app:icon="@drawable/car_icon" />
+
+    <Button
+        android:id="@+id/ride"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/drive"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="89dp"
+        android:text="RIDE"
+        android:textSize="20dp"
+        app:icon="@drawable/car_icon" />
+
+    <Button
+        android:id="@+id/posts"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/ride"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="89dp"
+        android:text="POSTS"
+        android:textSize="20dp"
+        app:icon="@drawable/posts" />
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom" />
+
+
+</RelativeLayout>
