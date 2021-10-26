@@ -7,15 +7,17 @@ public class GasPrice {
     private double destPrice;
     private double gasRatio; //Percent rider pays of the gas price
     private double driverProfit;
+    private int numRiders;
 
 
-    public GasPrice(Car car, int milesHigh, int milesCity, double destPrice, double gasRatio, double driverProfit){
+    public GasPrice(Car car, int milesHigh, int milesCity, double destPrice, double gasRatio, double driverProfit, int numRiders){
         this.car = car;
         this.milesHigh = milesHigh;
         this.milesCity = milesCity;
         this.destPrice = destPrice;
         this.gasRatio = gasRatio;
         this.driverProfit = driverProfit; //In Dollars per Mile (8 Dollars per 60 miles is 0.1333 $/mi
+        this.numRiders = numRiders;
     }
 
     public double riderPrice(){
@@ -23,7 +25,7 @@ public class GasPrice {
         double city = (milesCity/car.cityMPG()) * destPrice;
         double total = highway + city;
         total =  driverProfit() + (total * gasRatio);
-        return total;
+        return total/(numRiders);
     }
 
     public double changeRatio(double newPercent){

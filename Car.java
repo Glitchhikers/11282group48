@@ -16,6 +16,7 @@ public class Car {
         Vector<String[]> listCar = new Vector<>();
 
         //Scan for available "models"
+        //CSV Provided by Dept. of Energy at fueleconomy.gov
         File file = new File("vehicles.csv");
         try {
             Scanner scan = new Scanner(file);
