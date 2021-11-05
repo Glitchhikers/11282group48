@@ -12,9 +12,9 @@
         android:id="@+id/fullname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:hint="Full name"
-        android:textSize="20dp"
-        android:layout_marginTop="50dp" />
+        android:textSize="20dp" />
 
     <EditText
         android:id="@+id/email"
@@ -50,34 +50,34 @@
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Username"
+        android:layout_below="@id/phone"
         android:layout_marginTop="20dp"
-        android:textSize="20dp"
-        android:layout_below="@id/phone" />
+        android:hint="Username"
+        android:textSize="20dp" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Password"
-        android:textSize="20dp"
+        android:layout_below="@+id/username"
         android:layout_marginTop="20dp"
-        android:layout_below="@+id/username"/>
+        android:hint="Password"
+        android:textSize="20dp" />
 
     <EditText
         android:id="@+id/reenter_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Re-enter password"
-        android:textSize="20dp"
+        android:layout_below="@+id/password"
         android:layout_marginTop="20dp"
-        android:layout_below="@+id/password"/>
+        android:hint="Re-enter password"
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/reenter_password"
         android:layout_marginTop="70dp"
-        android:text="Register"
-        android:layout_below="@+id/reenter_password"/>
+        android:text="Register" />
 </RelativeLayout>

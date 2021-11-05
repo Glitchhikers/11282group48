@@ -15,22 +15,22 @@
         app:srcCompat="@drawable/logo" />
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/login2"
         android:layout_width="237dp"
         android:layout_height="93dp"
+        android:layout_below="@id/imageView"
         android:layout_marginStart="92dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="89dp"
-        android:layout_below="@id/imageView"
         android:text="LOG IN" />
 
     <Button
         android:id="@+id/signup"
         android:layout_width="237dp"
         android:layout_height="93dp"
+        android:layout_below="@id/login2"
         android:layout_marginStart="92dp"
         android:layout_marginTop="15dp"
-        android:layout_below="@id/login"
         android:layout_marginEnd="89dp"
         android:text="SIGN UP" />
 </RelativeLayout>
