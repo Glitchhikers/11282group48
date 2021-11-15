@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:isScrollContainer="false"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="139dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/posts_bar"
+        android:background="#7C0707"
+        android:text="HOME"
+        app:icon="@drawable/home_icon" />
+
+    <Button
+        android:id="@+id/posts_bar"
+        android:layout_width="136dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/profile"
+        android:background="#FFFFFF"
+        android:text="POSTS"
+        app:icon="@drawable/posts_icon_bar" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="240dp"
+        android:layout_height="266dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/drive"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="89dp"
+        android:text="DRIVE"
+        android:textSize="20dp"
+        app:icon="@drawable/car_icon" />
+
+    <Button
+        android:id="@+id/ride"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/drive"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="89dp"
+        android:text="RIDE"
+        android:textSize="20dp"
+        app:icon="@drawable/car_icon" />
+
+    <Button
+        android:id="@+id/posts"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/ride"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="89dp"
+        android:text="POSTS"
+        android:textSize="20dp"
+        app:icon="@drawable/posts" />
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="139dp"
+        android:layout_height="55dp"
+
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:backgroundTint="#FFFFFF"
+        android:text="PROFILE"
+        app:icon="@drawable/rsz_profile_icon" />
+
+
+</RelativeLayout>

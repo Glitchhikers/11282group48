@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Carpool Connect</string>
+    <string name="title_activity_google_maps_screen">GoogleMapsScreen</string>
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:isScrollContainer="false"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="139dp"
+        android:layout_height="55dp"
+
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:backgroundTint="#FFFFFF"
+        android:text="PROFILE"
+        app:icon="@drawable/rsz_profile_icon" />
+    <Button
+        android:id="@+id/home"
+        android:layout_width="139dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/posts_bar"
+        android:background="#7C0707"
+        android:text="HOME"
+        app:icon="@drawable/home_icon" />
+    <Button
+        android:id="@+id/posts_bar"
+        android:layout_width="136dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/profile"
+        android:background="#FFFFFF"
+        android:text="POSTS"
+        app:icon="@drawable/posts_icon_bar" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/roundCardView"
+        android:layout_width="197dp"
+        android:layout_height="212dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:elevation="0dp"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:cardCornerRadius="20dp">
+
+        <ImageView
+            android:id="@+id/preview_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            app:srcCompat="@drawable/profile_icon"
+            tools:srcCompat="@drawable/profile_icon" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/change_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="268dp"
+        android:text="CHANGE IMAGE" />
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="382dp"
+        android:layout_height="82dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="261dp"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:text="TextView"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="380dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="206dp"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:text="placeholder"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="377dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="144dp"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:text="placeholder"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="373dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="83dp"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:text="placeholder"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+</RelativeLayout>
